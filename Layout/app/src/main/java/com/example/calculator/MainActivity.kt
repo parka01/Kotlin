@@ -1,4 +1,4 @@
-package com.example.calculator
+package com.example.layout
 
 import android.graphics.Color
 import android.graphics.Typeface
