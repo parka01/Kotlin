@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="100px">
+
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하겠습니까?" />
+
+    <Switch
+        android:id="@+id/swAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작함"
+        android:textColorHighlight="#FFACC4"
+        android:textColorLink="#FB3069" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 안드로이드는?"
+        android:textSize="20dp"
+        android:visibility="invisible"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/RdoOreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오레오" />
+
+        <RadioButton
+            android:id="@+id/RdoPie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파이" />
+
+        <RadioButton
+            android:id="@+id/RdoQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q" />
+    </RadioGroup>
+
+<!--    <Button-->
+<!--        android:id="@+id/BtnOk"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="선택 완료"-->
+<!--        android:visibility="invisible"-->
+<!--        app:backgroundTint="#EADEFF" />-->
+
+    <ImageView
+        android:id="@+id/ImgPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/BtnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:visibility="invisible"
+        app:backgroundTint="#CDDC39" />
+    <Button
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈으로"
+        android:visibility="invisible"
+        app:backgroundTint="#CDDC39" />
+</LinearLayout>

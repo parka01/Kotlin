@@ -5,13 +5,13 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TextView
+    <EditText
         android:id="@+id/Edit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="숫자1"/>
-    <TextView
+    <EditText
         android:id="@+id/Edit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,6 +43,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="나누기"/>
+    <Button
+        android:id="@+id/BtnMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="나머지값"/>
     <TextView
         android:id="@+id/TextResult"
         android:layout_width="wrap_content"
