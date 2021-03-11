@@ -61,8 +61,9 @@
     <LinearLayout
         android:id="@+id/bookComplete"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CCCCCC">
+        android:layout_height="30dp"
+        android:background="#CCCCCC"
+        android:layout_gravity="right">
         <Button
             android:id="@+id/btnEnd"
             android:layout_width="wrap_content"
