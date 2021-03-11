@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         title = "테이블레이아웃 계산기"
 
         edit1 = findViewById<EditText>(R.id.Edit1)
-        edit1 = findViewById<EditText>(R.id.Edit2)
+        edit2 = findViewById<EditText>(R.id.Edit2)
         btnAdd = findViewById<Button>(R.id.BtnAdd)
         btnSub = findViewById<Button>(R.id.BtnSub)
         btnMul = findViewById<Button>(R.id.BtnMul)
