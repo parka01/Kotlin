@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabHost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tabcontent">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#f00000"-->
+<!--                android:orientation="vertical"/>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#3F51B5"-->
+<!--                android:orientation="vertical"/>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#03A9F4"-->
+<!--                android:orientation="vertical"/>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#FFEB3B"-->
+<!--                android:orientation="vertical"/>-->
+
+            <ImageView
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical"
+                android:src="@drawable/droid"/>
+            <ImageView
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical"
+                android:src="@drawable/droid2"/>
+            <ImageView
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical"
+                android:src="@drawable/droid3"/>
+            <ImageView
+                android:id="@+id/tab4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical"
+                android:src="@drawable/droid4"/>
+            <ImageView
+                android:id="@+id/tab5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical"
+                android:src="@drawable/droid5"/>
+        </FrameLayout>
+        <TabWidget
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabs"/>
+    </LinearLayout>
+
+</TabHost>
