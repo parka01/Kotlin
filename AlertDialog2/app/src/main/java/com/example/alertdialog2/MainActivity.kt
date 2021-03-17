@@ -1,8 +1,10 @@
 package com.example.alertdialog2
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             dlg.setTitle("사용자 정보 입력")
             dlg.setIcon(R.drawable.fuzzyy)
             dlg.setView(dialogView)
+
             dlg.setPositiveButton("확인") { dialog, which ->
                 dlgEdtName = dialogView.findViewById<EditText>(R.id.dlgEdt1)
                 dlgEdtEmail = dialogView.findViewById<EditText>(R.id.dlgEdt2)
@@ -44,6 +47,12 @@ class MainActivity : AppCompatActivity() {
             }
             dlg.setNegativeButton("취소") { dialog, which ->
                 var toast = Toast(this@MainActivity)
+
+                val display = (getSystemService(Context.WINDOW_SERVICE) as WindowManager).defaultDisplay
+
+                val xOffset = (Math.random()*display.width).toInt()
+                val yOffset = (Math.random()*display.height).toInt()
+
                 toastView = View.inflate(this@MainActivity, R.layout.toast, null)
                 toastText = toastView.findViewById<TextView>(R.id.toastText1)
                 toastText.text = "취소했습니다."

@@ -7,25 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#001D57">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="사용자 이름"/>
+        android:text="사용자 이름"
+        android:textColor="#ffffff"/>
     <EditText
         android:id="@+id/dlgEdt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="이메일"/>
+        android:text="이메일"
+        android:textColor="#ffffff"/>
     <EditText
         android:id="@+id/dlgEdt2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"/>
 </LinearLayout>
