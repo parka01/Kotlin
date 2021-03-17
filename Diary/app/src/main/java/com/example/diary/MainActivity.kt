@@ -32,12 +32,13 @@ class MainActivity : AppCompatActivity() {
 
         dp.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
             fileName = (Integer.toString(year) + "-"
-                    + Integer.toString(monthOfYear + 1)+ "_"
+                    + Integer.toString(monthOfYear + 1) + "_"
                     + Integer.toString(dayOfMonth) + ".txt")
             var str = readDiary(fileName)
             edtDiary.setText(str)
             btnWrite.isEnabled = true
         }
+
         btnWrite.setOnClickListener {
             var outFs = openFileOutput(fileName, Context.MODE_PRIVATE)
             var str = edtDiary.text.toString()
