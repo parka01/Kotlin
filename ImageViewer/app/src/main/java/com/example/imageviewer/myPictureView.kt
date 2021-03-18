@@ -7,7 +7,7 @@ import android.util.AttributeSet
 import android.view.View
 
 class myPictureView(context: Context, attrs: AttributeSet?) :
-    View(context, attrs) {
+                    View(context, attrs) {
     var imagePath : String? = null
 
     override fun onDraw(canvas: Canvas) {
