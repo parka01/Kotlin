@@ -3,6 +3,7 @@ package com.example.bmiapp
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -54,15 +55,14 @@ class MainActivity : AppCompatActivity() {
                 var dlg = AlertDialog.Builder(this@MainActivity)
                 var pop = LayoutInflater.from(this)
                 var view = pop.inflate(R.layout.dialog, null)
-                dlg.setTitle("키와 체중")
-                dlg.set(#000000).
+                dlg.setTitle(Html.fromHtml("<font color='#80D7FF'>키와 체중</font>"))
                 dlg.setView(view)
 //                dlg.setMessage("키와 체중을 넣어주세요!")
-                dlg.setPositiveButton("닫기", null)
+//                dlg.setPositiveButton("닫기", null)
                 dlg.show()
             } else {
             result = numW.toDouble() / ((numH.toDouble()/100)*(numH.toDouble()/100))
-            textResult.text = "계산결과: " + result.toString()
+            textResult.text = "2.신체질량지수는 " + result.toString() + "입니다!"
             false
             }
         }
