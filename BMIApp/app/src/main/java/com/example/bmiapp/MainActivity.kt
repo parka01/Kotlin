@@ -1,11 +1,13 @@
 package com.example.bmiapp
 
+import android.content.Context
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
@@ -17,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnShow : Button
     lateinit var textResult : TextView
 
-    var result : Float? = null
+    var result : Double? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +40,15 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
             }
         }
+
+
+
+
+
+
+
+
+
         height = findViewById<EditText>(R.id.height)
         weight = findViewById<EditText>(R.id.weight)
         textResult = findViewById<TextView>(R.id.textResult)
@@ -57,10 +68,17 @@ class MainActivity : AppCompatActivity() {
 //                dlg.setPositiveButton("닫기", null)
                 dlg.show()
             } else {
-            result = numW.toFloat() / ((numH.toFloat()/100)*(numH.toFloat()/100))
+            result = numW.toDouble() / ((numH.toDouble()/100)*(numH.toDouble()/100))
             textResult.text = "2.신체질량지수는 " + result.toString() + "입니다!"
             false
             }
         }
     }
+
+
+
+
+
+
+
 }
