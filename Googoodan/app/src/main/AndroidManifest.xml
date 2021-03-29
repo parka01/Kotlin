@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <activity android:name=".MainActivity"
-            android:icon="@drawable/icon"
-            android:label="코틀린반 박아영">
+            android:label="코틀린반 박아영: 구구단">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

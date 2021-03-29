@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        title = "액티비티 테스 예제"
+        title = "액티비티 테스트 예제"
         android.util.Log.i("액티비티 테스트", "onCreate(")
 
         var btnDial = findViewById<Button>(R.id.btnDial)

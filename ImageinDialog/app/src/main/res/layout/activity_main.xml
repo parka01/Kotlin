@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".MainActivity" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="키:"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/height"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="(cm)"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="체 중:"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/weight"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="(kg)"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="성 별:"/>
+
+
+    -<RadioGroup android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RadioGroup">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="여자" android:id="@+id/fmale"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="남자" android:id="@+id/male"/>
+
+</RadioGroup>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="혈액형: "/>
+
+    <Spinner android:layout_height="match_parent" android:layout_width="73dp" android:id="@+id/spinnerblood" android:entries="@array/혈액형"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="습관:"/>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="음주" android:id="@+id/chkDrink"/>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="흡연" android:id="@+id/chkSmock"/>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="운동" android:id="@+id/chkexecsize"/>
+
+</LinearLayout>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="몸 상태 측정" android:id="@+id/btncalBody"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="1.?형 ??입니다!" android:id="@+id/tvBloodtype"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="2.신체 질량지수는 ???입니다!" android:id="@+id/tvBWM"/>
+
+
+    <HorizontalScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/Scroll">
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/imgLinear"/>
+
+</HorizontalScrollView>
+
+</LinearLayout>
