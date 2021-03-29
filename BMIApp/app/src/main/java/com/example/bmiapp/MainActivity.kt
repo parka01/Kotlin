@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnShow : Button
     lateinit var textResult : TextView
 
-    var result : Double? = null
+    var result : Float? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,21 +28,16 @@ class MainActivity : AppCompatActivity() {
 
         var type = arrayOf("A", "B", "O", "AB")
         var spinner = findViewById<Spinner>(R.id.bloodType)
-
         var adapter: ArrayAdapter<String>
         adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, type)
         spinner.adapter = adapter
-
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?){
                 textResult.text = "혈액형을 고르세요"
             }
-
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
             }
         }
-
-
         height = findViewById<EditText>(R.id.height)
         weight = findViewById<EditText>(R.id.weight)
         textResult = findViewById<TextView>(R.id.textResult)
@@ -61,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 //                dlg.setPositiveButton("닫기", null)
                 dlg.show()
             } else {
-            result = numW.toDouble() / ((numH.toDouble()/100)*(numH.toDouble()/100))
+            result = numW.toFloat() / ((numH.toFloat()/100)*(numH.toFloat()/100))
             textResult.text = "2.신체질량지수는 " + result.toString() + "입니다!"
             false
             }
