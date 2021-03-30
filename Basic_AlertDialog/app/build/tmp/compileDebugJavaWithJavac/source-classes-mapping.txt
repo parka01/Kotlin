@@ -1,0 +1,2 @@
+com/example/basic_alertdialog/BuildConfig.java
+ com.example.basic_alertdialog.BuildConfig

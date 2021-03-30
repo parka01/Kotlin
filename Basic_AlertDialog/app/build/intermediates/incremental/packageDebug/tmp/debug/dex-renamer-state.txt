@@ -1,0 +1,4 @@
+#Tue Mar 16 14:11:04 KST 2021
+base.0=/Users/Ahyoung/Desktop/Kotlin/Basic_AlertDialog/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
