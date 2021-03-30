@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want on your burrito bowl?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/rgProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdoBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef"
+            />
+        <RadioButton
+            android:id="@+id/rdoPork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pork"/>
+        <RadioButton
+            android:id="@+id/rdoTofu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tofu"/>
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/ckCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"/>
+    <CheckBox
+        android:id="@+id/ckGuaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guacamole"/>
+    <CheckBox
+        android:id="@+id/ckQueso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queso"/>
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Place an order"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+</LinearLayout>
