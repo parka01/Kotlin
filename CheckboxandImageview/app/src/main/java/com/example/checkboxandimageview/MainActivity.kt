@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var rdoCat : CheckBox
     lateinit var rdoRabbit : CheckBox
 
-    lateinit var imgPet : ImageView
+    lateinit var imgDog : ImageView
+    lateinit var imgRabbit : ImageView
+    lateinit var imgCat : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,18 +30,35 @@ class MainActivity : AppCompatActivity() {
         rdoCat = findViewById<CheckBox>(R.id.RdoCat)
         rdoRabbit = findViewById<CheckBox>(R.id.RdoRabbit)
 
-        imgPet = findViewById<ImageView>(R.id.ImgPet)
+        imgDog = findViewById<ImageView>(R.id.imgDog)
+        imgCat = findViewById<ImageView>(R.id.imgCat)
+        imgRabbit = findViewById<ImageView>(R.id.imgRabbit)
 
 
-        rdoCat.setOnClickListener {
-            imgPet.setImageResource(R.drawable.cat)
-        }
-        rdoDog.setOnClickListener {
-            imgPet.setImageResource(R.drawable.dog)
-        }
-        rdoRabbit.setOnClickListener {
-            imgPet.setImageResource(R.drawable.rabbit)
-        }
+        rdoDog.setOnClickListener ({
+            if(rdoDog.isChecked) {
+                imgDog.setImageResource(R.drawable.dog)
+            }
+            else {
+                imgDog.setImageResource(0)
+            }
+        })
+        rdoCat.setOnClickListener ({
+            if(rdoCat.isChecked) {
+                imgCat.setImageResource(R.drawable.cat)
+            }
+            else {
+                imgCat.setImageResource(0)
+            }
+        })
+        rdoRabbit.setOnClickListener ({
+            if(rdoRabbit.isChecked) {
+                imgRabbit.setImageResource(R.drawable.rabbit)
+            }
+            else {
+                imgRabbit.setImageResource(0)
+            }
+        })
 
     }
 }
