@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recommendation"
+    android:orientation="vertical"
+    android:background="#E2FFF0">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스웨덴 추천장소✨"
+        android:textSize="30dp"
+        android:textColor="#0965ED"
+        android:gravity="center"
+        android:layout_marginVertical="40dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCoffee"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="#BAFFDB"
+                android:text="🎂 멋진 카페"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnPark"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="#8EFBC3"
+                android:text="🌳 휴식공원"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnBotanical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="#7DF6DA"
+                android:text="🌷식물원"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnPizza"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="#60EFDF"
+                android:text="🍕 맛있는 피자와 와인"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnBeer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="#60E3EF"
+                android:text="🍺 맥주 마시기 좋은 곳"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnShopping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#60C6EF"
+                android:text="🛍 쇼핑몰"
+                android:textColor="#0965ED" />
+
+            <Button
+                android:id="@+id/btnBurger"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#9DBFFB"
+                android:text="🍔 스웨덴 국민햄버거"
+                android:textColor="#0965ED" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

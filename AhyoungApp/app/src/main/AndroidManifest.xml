@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mar19intent">
+    package="com.example.ahyoungapp">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="코틀린반 박아영: 기분전환앱"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".Content3"></activity>
-        <activity
-            android:name=".Content2"
-            android:label="두번째 액티비티" />
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".Recommendation"></activity>
+        <activity android:name=".Content3" />
+        <activity android:name=".Content2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
