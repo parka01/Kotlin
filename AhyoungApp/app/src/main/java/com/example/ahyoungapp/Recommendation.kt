@@ -25,7 +25,7 @@ class Recommendation : AppCompatActivity() {
             startActivity(intent)
         }
         btnBotanical.setOnClickListener {
-            var uri = Uri.parse("geo:59.3688308,18.0433558?q=" + Uri.encode("Victoriahuset"))
+            var uri = Uri.parse("geo:59.3688308,18.0433558?q=" + Uri.encode("Victoriahuset Botanical"))
             var intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }

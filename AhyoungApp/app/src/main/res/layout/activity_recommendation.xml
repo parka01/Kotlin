@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="스웨덴 추천장소✨"
+        android:text="✨스웨덴 추천장소✨"
         android:textSize="30dp"
         android:textColor="#0965ED"
         android:gravity="center"
