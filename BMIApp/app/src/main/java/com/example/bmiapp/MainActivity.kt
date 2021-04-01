@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var type1 : TextView
     lateinit var type2 : TextView
     lateinit var textResult : TextView
+    lateinit var imgSmoke : ImageView
+    lateinit var imgDrink : ImageView
+    lateinit var imgWorkout : ImageView
+
     var bloodType = arrayOf("A", "B", "O", "AB")
     var result : Double? = null
 
@@ -43,6 +47,13 @@ class MainActivity : AppCompatActivity() {
         type1 = findViewById<TextView>(R.id.type1)
         type2 = findViewById<TextView>(R.id.type2)
         textResult = findViewById<TextView>(R.id.textResult)
+
+        ckDrink = findViewById<CheckBox>(R.id.ckDrink)
+        ckSmoke = findViewById<CheckBox>(R.id.ckSmoke)
+        ckWorkout = findViewById<CheckBox>(R.id.ckWorkout)
+        imgSmoke = findViewById<ImageView>(R.id.imgSmoke)
+        imgDrink = findViewById<ImageView>(R.id.imgDrink)
+        imgWorkout = findViewById<ImageView>(R.id.imgWorkout)
 
         //--------------------혈액형스피너--------------------
         var adapter1 = ArrayAdapter(this, android.R.layout.simple_spinner_item, bloodType)
@@ -82,7 +93,6 @@ class MainActivity : AppCompatActivity() {
             }
             if(rgGender.checkedRadioButtonId != -1){
                 result += ""
-
                 if(rdoFemale.isChecked){
                     result += "여자입니다!"
                 }
@@ -93,12 +103,36 @@ class MainActivity : AppCompatActivity() {
                 type2.text = result
             }
         }
+        //--------------------체크박스 이미지 띄우기--------------------
+        ckSmoke.setOnClickListener {
+            if(ckSmoke.isChecked) {
+                imgSmoke.setImageResource(R.drawable.drinking)
+            }
+            else {
+                imgSmoke.setImageResource(0)
+            }
+        }
+        ckDrink.setOnClickListener {
+            if(ckDrink.isChecked) {
+                imgDrink.setImageResource(R.drawable.ciga)
+            }
+            else {
+                imgDrink.setImageResource(0)
+            }
+        }
+        ckWorkout.setOnClickListener {
+            if(ckWorkout.isChecked) {
+                imgWorkout.setImageResource(0)
+            }
+            else {
+                imgWorkout.setImageResource(R.drawable.running)
+            }
+        }
     }
     inner class SpinnerListener : AdapterView.OnItemSelectedListener {
         override fun onNothingSelected(p0: AdapterView<*>?) {
         }
         override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-           //type.text = ""
         }
     }
 }

@@ -100,14 +100,6 @@
             android:text="습관:"
             android:layout_marginRight="10dp"/>
         <CheckBox
-            android:id="@+id/ckDrink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:text="음주"
-            android:checked="true"
-            android:layout_marginRight="20dp"/>
-        <CheckBox
             android:id="@+id/ckSmoke"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,11 +107,19 @@
             android:text="흡연"
             android:layout_marginRight="20dp"/>
         <CheckBox
+            android:id="@+id/ckDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="음주"
+            android:layout_marginRight="20dp"/>
+        <CheckBox
             android:id="@+id/ckWorkout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:text="운동"
+            android:checked="true"
             android:layout_marginRight="20dp"/>
     </LinearLayout>
     <Button
@@ -145,9 +145,27 @@
         android:id="@+id/textResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <Gallery
-        android:id="@+id/gallery1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spacing="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="220dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imgSmoke"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                />
+            <ImageView
+                android:id="@+id/imgDrink"
+                android:layout_width="220dp"
+                android:layout_height="220dp"/>
+            <ImageView
+                android:id="@+id/imgWorkout"
+                android:layout_width="220dp"
+                android:layout_height="220dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
 </LinearLayout>
