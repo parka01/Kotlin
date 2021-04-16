@@ -44,9 +44,6 @@ class MainActivity : AppCompatActivity() {
             //v.text = e.text.toString()
             v.setText(e.text.toString())
             //위와 같은 내용이다.
-
         }
-
-
     }
 }
