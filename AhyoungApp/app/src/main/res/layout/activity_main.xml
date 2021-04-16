@@ -35,6 +35,18 @@
             android:text="스웨덴 추천장소"
             android:textColor="@color/white"/>
         <RadioButton
+            android:id="@+id/rdoRecommendation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미국 추천장소"
+            android:textColor="@color/white"/>
+        <RadioButton
+            android:id="@+id/rdoRecommendation3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="러시아 추천장소"
+            android:textColor="@color/white"/>
+        <RadioButton
             android:id="@+id/rdoPop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

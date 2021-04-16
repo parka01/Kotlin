@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         //--------------------체크박스 이미지 띄우기--------------------
         ckSmoke.setOnClickListener {
             if(ckSmoke.isChecked) {
-                imgSmoke.setImageResource(R.drawable.drinking)
+                imgSmoke.setImageResource(R.drawable.ciga)
             }
             else {
                 imgSmoke.setImageResource(0)
@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
         }
         ckDrink.setOnClickListener {
             if(ckDrink.isChecked) {
-                imgDrink.setImageResource(R.drawable.ciga)
+                imgDrink.setImageResource(R.drawable.drinking)
             }
             else {
                 imgDrink.setImageResource(0)
